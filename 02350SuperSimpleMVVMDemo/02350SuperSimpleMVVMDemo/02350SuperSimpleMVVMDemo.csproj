@@ -38,7 +38,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>_02350SuperSimpleMVVMDemo.App</StartupObject>
+    <StartupObject>_02350SuperSimpleMVVMDemo.View.App</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
