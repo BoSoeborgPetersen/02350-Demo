@@ -15,19 +15,34 @@ namespace _02350SuperSimpleMVVMDemo.Model
         public int Y { get; set; }
         public int Width { get; set; }
         public int Height { get; set; }
+
         // The CenterX and CenterY derived properties are used by the Line class, 
         //  so it can be drawn from the center of one Shape to the center of another Shape.
         public int CenterX { get { return X + Width / 2; } }
+        // This corresponds to the following in Java (can also be done like this in .NET):
+
+        // public int getCenterX(){
+        //   return X + Width / 2;
+        // }
+
         public int CenterY { get { return Y + Height / 2; } }
+        // This corresponds to the following in Java (can also be done like this in .NET):
+
+        // public int getCenterY(){
+        //   return Y + Height / 2;
+        // }
         
         // The constructor is in this case used to set the default values for the properties.
         public Shape()
         {
+            X = Y = 200;
             // The "X = Y = value" syntax corresponds to the following:
             // X = 200;
             // Y = 200;
-            X = Y = 200;
             Width = Height = 100;
+            // The "Width = Height = value" syntax corresponds to the following:
+            // Width = 200;
+            // Height = 200;
         }
     }
 }

@@ -15,29 +15,29 @@ namespace _02350SuperSimpleMVVMDemo.Model
         // This is called Auto-Implemented Properties (http://msdn.microsoft.com/en-us/library/bb384054.aspx).
 
         public Shape From { get; set; }
-        // This corresponds to the following in Java:
+        // This corresponds to the following in Java (can also be done like this in .NET):
 
-        // private Shape From;
+        // private Shape from;
         // 
-        // public Shape From(){
-        //   return From;
+        // public Shape getFrom(){
+        //   return from;
         // }
         //
-        // public void From(Shape value){
-        //   From = value;
+        // public void setFrom(Shape value){
+        //   from = value;
         // }
 
         public Shape To { get; set; }
-        // This corresponds to the following in Java:
+        // This corresponds to the following in Java (can also be done like this in .NET):
 
-        // private Shape To;
+        // private Shape to;
         // 
-        // public Shape To(){
-        //   return To;
+        // public Shape getTo(){
+        //   return to;
         // }
         //
-        // public void To(Shape value){
-        //   To = value;
+        // public void setTo(Shape value){
+        //   to = value;
         // }
     }
 }

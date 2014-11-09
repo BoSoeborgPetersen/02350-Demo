@@ -8,7 +8,7 @@
     <Window.DataContext>
         <ViewModel:MainViewModel />
     </Window.DataContext>
-    <!-- This View (Window) contains only 1 Grid, with only 1 column and 1 row, but it is necessary to put the 2 ItemsControls in the same area on top of each other -->
+    <!-- This View (Window) contains only 1 Grid, with only 1 column and 1 row, but the Grid is necessary to put the 2 ItemsControls in the same area on top of each other -->
     <Grid>
         <!-- An ItemControl shows the objects of the property it is bound to. -->
         <!-- The ItemControl does not know how to display these objects and will by default show them with a TextBlock containing the return value of the objects "ToString()" method.  -->
