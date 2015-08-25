@@ -1,11 +1,12 @@
-﻿<Application x:Class="_02350SuperSimpleMVVMDemo.View.App"
+﻿<!-- The xmlns:Model defines the Model namespace so it can be used as a variable (called Model) later in this XAML file. -->
+<Application x:Class="_02350SuperSimpleMVVMDemo.View.App"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:Model="clr-namespace:_02350SuperSimpleMVVMDemo.Model"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
         <!-- This Data Template tells the View (Window) how to visually show the Shape class. -->
-        <!-- If you remove this template the Shape will be show with a TextBlock, that shows the return value of the "ToString()" method. -->
+        <!-- If you remove this template the Shape will be show with a TextBlock, that shows the return value of the "ToString()" method (default to fully qualified name: _02350SuperSimpleMVVMDemo.Model.Shape). -->
         <!-- The Data Type tells the WPF engine, that this Data Template should be applied for the Shape class, in the Model namespace (Java: package). -->
         <DataTemplate DataType="{x:Type Model:Shape}">
             <Canvas>

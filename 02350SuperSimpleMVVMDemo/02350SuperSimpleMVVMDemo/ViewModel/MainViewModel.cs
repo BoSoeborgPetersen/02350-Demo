@@ -46,11 +46,10 @@ namespace _02350SuperSimpleMVVMDemo.ViewModel
                 new Shape() { X = 30, Y = 40, Width = 80, Height = 80 }, 
                 new Shape() { X = 140, Y = 230, Width = 100, Height = 100 } 
             };
-            // Here the list of Lines i filled with 1 Line that connects the 2 Shapes in the Shapes collection.
-            // ElementAt() is an Extension Method, that like many others can be used on all types of collections.
-            // It works just like the "Shapes[0]" syntax would be used for arrays.
+            // Here the list of Lines is filled with 1 Line that connects the 2 Shapes in the Shapes collection.
+            // The Shapes[0] syntax (which is normal for arrays), can be used with many types of collections in .NET.
             Lines = new ObservableCollection<Line>() { 
-                new Line() { From = Shapes.ElementAt(0), To = Shapes.ElementAt(1) } 
+                new Line() { From = Shapes[0], To = Shapes[1] } 
             };
         }
     }
