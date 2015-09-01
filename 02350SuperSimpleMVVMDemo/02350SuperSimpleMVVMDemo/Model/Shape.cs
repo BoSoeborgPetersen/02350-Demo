@@ -73,6 +73,7 @@ namespace _02350SuperSimpleMVVMDemo.Model
         //  public int getCenterX(){
         //    return X + Width / 2;
         //  }
+        // This method uses an expression-bodied member (http://www.informit.com/articles/article.aspx?p=2414582) to simplify a method that only returns a value;
         // Old .NET (Before 4.6):
         //  public int CenterX { get { return X + Width / 2; } }
         public int CenterX => X + Width / 2;
