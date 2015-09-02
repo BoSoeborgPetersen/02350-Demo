@@ -14,7 +14,7 @@
                 <!-- The Left and Top coordinates of the ellipse (X and Y coordinates, with X being from the left and Y being from the top), -->
                 <!--  are bound to the X and Y properties of the Shape object. -->
                 <!-- Likewise the Width and Height of the Ellipse are bound the the Width and Height properties of the Shape object. -->
-                <Ellipse Fill="Blue" Stroke="Purple" StrokeThickness="6" StrokeDashArray="3.1" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Width="{Binding Width}" Height="{Binding Height}"/>
+                <Ellipse Fill="Blue" Stroke="Purple" StrokeThickness="6" StrokeDashArray="3" Canvas.Left="{Binding X}" Canvas.Top="{Binding Y}" Width="{Binding Width}" Height="{Binding Height}"/>
             </Canvas>
         </DataTemplate>
         <!-- Similar to the Data Template for the Shape, this describes how the Line class should be visually shown. -->

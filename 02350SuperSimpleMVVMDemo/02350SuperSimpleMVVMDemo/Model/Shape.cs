@@ -15,6 +15,7 @@ namespace _02350SuperSimpleMVVMDemo.Model
         // The "{ get; set; }" syntax describes that a private field 
         //  and default getter setter methods should be generated.
         //  This is called Auto-Implemented Properties (http://msdn.microsoft.com/en-us/library/bb384054.aspx).
+
         // Java:
         //  private int x = 200;
         // 
@@ -69,11 +70,12 @@ namespace _02350SuperSimpleMVVMDemo.Model
 
         // The CenterX and CenterY derived properties are used by the Line class, 
         //  so it can be drawn from the center of one Shape to the center of another Shape.
+        // These methods use an expression-bodied member (http://www.informit.com/articles/article.aspx?p=2414582) to simplify methods that only returns a value;
+
         // Java:
         //  public int getCenterX(){
         //    return X + Width / 2;
         //  }
-        // This method uses an expression-bodied member (http://www.informit.com/articles/article.aspx?p=2414582) to simplify a method that only returns a value;
         // Old .NET (Before 4.6):
         //  public int CenterX { get { return X + Width / 2; } }
         public int CenterX => X + Width / 2;
