@@ -48,7 +48,7 @@ namespace _02350SuperSimpleMVVMDemo.ViewModel
             //   new Shape(30, 40, 80, 80);
             Shapes = new ObservableCollection<Shape>() { 
                 new Shape() { X = 30, Y = 40, Width = 80, Height = 80 }, 
-                new Shape() { X = 140, Y = 230, Width = 100, Height = 100 } 
+                new Shape() { X = 130, Y = 140, Width = 100, Height = 100 } 
             };
             // Here the list of Lines is filled with 1 Line that connects the 2 Shapes in the Shapes collection.
             // The Shapes[0] syntax (which is normal for arrays), can be used with many types of collections in .NET.
