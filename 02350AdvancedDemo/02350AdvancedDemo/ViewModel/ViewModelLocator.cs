@@ -25,7 +25,7 @@ namespace _02350AdvancedDemo.ViewModel
             else
             {
                 container.RegisterType<DialogViews>();
-                //container.RegisterType<UndoRedoController>();
+                container.RegisterType<UndoRedoController>();
             }
 
             container.RegisterType<MainViewModel>();
